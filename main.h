@@ -1,8 +1,8 @@
 #ifndef MAIN_H
 #define MAIN_H
 
-#include <stdio.h>
 #include <stdarg.h>
+#include <stdio.h>
 #include <unistd.h>
 
 #define UNUSED(x) (void)(x)
@@ -21,8 +21,9 @@
 
 /**
  * struct fmt - Struct op
- * @fmt: The format
- * @fn: The function associated
+ *
+ * @fmt: The format.
+ * @fn: The function associated.
  */
 struct fmt
 {
@@ -33,8 +34,9 @@ struct fmt
 
 /**
  * typedef struct fmt fmt_t - Struct op
- * @fmt: The format
- * @fm_t: The function associated
+ *
+ * @fmt: The format.
+ * @fm_t: The function associated.
  */
 typedef struct fmt fmt_t;
 
@@ -113,4 +115,4 @@ int is_digit(char);
 long int convert_size_number(long int num, int size);
 long int convert_size_unsgnd(unsigned long int num, int size);
 
-#endif
+#endif /* MAIN_H */
